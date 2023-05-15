@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Haiyang Wu's Homepage</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Haiyang Wu">
+    <meta name="description" content="Homepage of Haiyang Wu">
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  	<link rel="stylesheet" type="text/css" media="screen,print" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+</head>
+
+
+<body>
+  <table style="width:100%;max-width:960px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+	      
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <td style="padding:0%;width:70%;vertical-align:middle">
+		    
+		  <h1>Haiyang Wu <span style="font-family:STFangsong; font-size:20pt"> (吴海洋)</span></h1>
+		  <!-- <h1 style="text-align:center">Haiyang Wu <span style="font-family:STFangsong; font-size:20pt"> (吴海洋)</span></h1> -->
+		  <b>Email</b>: <tt>&#104;&#97;&#105;&#121;&#97;&#110;&#103;&#46;&#119;&#117;&#64;&#117;&#46;&#110;&#117;&#115;&#46;&#101;&#100;&#117;</tt> <br>
+		  <b>Phone</b>: +65 82665743 <br>
+		  <a href="data/CV.pdf"> CV</a>&nbsp/&nbsp
+		  <a href="https://www.linkedin.com/in/haiyang-wu/"> LinkedIn</a>&nbsp/&nbsp
+		  <a href="https://github.com/HoiyeungNg"> GitHub</a>
+			<p>
+				I am pursuing Master's degree in Venture Creation at <a href="https://nus.edu.sg/">National University of Singapore</a>.<br>
+			Previously, I received B.Eng(Hons) in Electronics and Electrical Engineering from <a href="https://www.gla.ac.uk/">University of Glasgow</a>.<br>
+			Also, I received B.Eng in Electronic Information Engineering from <a href="https://www.uestc.edu.cn/">University of Electronic Science and Technology of China</a>.<br>
+			</p>
+			<p>
+				I have broad interests in AI powered IoT system.<br>
+				I am exploring utilizing AIoT to tackle with health issue, especially sleep disoders.
+			</p>
+
+            </td>
+            <td style="padding:2.5%;width:20%;max-width:23%">
+              <a href="images/haiyang_photo.jpg"><img style="width:120%;max-width:100%" alt="profile photo" src="images/haiyang_photo.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		
+	<p><heading>Projects</heading></p>
+	<ul class="b">
+		
+  	<tr onmouseout="fall_stop()" onmouseover="fall_start()">
+	    <td style="padding:10px;width:25%;vertical-align:middle">
+	      <div class="one">
+		<div class="two" id='fall_image'>
+		  <img src='images/fall.gif' width="200"></div>
+		<img src='images/fall.gif' width="200">
+	      </div>
+	      <script type="text/javascript">
+		function fall_start() {
+		  document.getElementById('fall_image').style.opacity = "1";
+		}
+
+		function fall_stop() {
+		  document.getElementById('fall_image').style.opacity = "0";
+		}
+		fall_stop()
+	      </script>
+	    </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+		<b> Real-time Caring System for Elderly</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u><b>2023 </b></u><b>(Most Recent)</b>
+		
+			<p>Supervisor: Assoc Prof. Tan Wee Kek, NUS</p>
+			<li> Temperature data collected and pre-processed on the edge (Smart watch and Micro:bit).</li>
+			<li> Pose estimated by MoveNet model running in real-time on the fog (Raspberry Pi).</li>
+			<li> Improved the accuracy of MoveNet by masking the dark region of the image.</li>
+			<li> Trained decision tree classifier to detect falling down, with an accuracy of 90%.</li>
+			<li> Implemented a Django based backend, and a SQL database on the Google Cloud.</li>
+			<li> Developed a web page to show the alter when detecting falling, arrhvthmia, and hyperthermia.</li>
+			[<a href="https://youtu.be/PIXYuU3UVUE">Demo Video</a>] 
+			[<a href="https://github.com/HoiyeungNg/AIoT_Caring">Code</a>]</p>
+		 </td>			
+          </tr>
+
+  	<tr onmouseout="mnist_stop()" onmouseover="mnist_start()">
+	    <td style="padding:10px;width:25%;vertical-align:middle">
+	      <div class="one">
+		<div class="two" id='mnist_image'>
+		  <img src='images/mnist.gif' width="200"></div>
+		<img src='images/mnist.gif' width="200">
+	      </div>
+	      <script type="text/javascript">
+		function mnist_start() {
+		  document.getElementById('mnist_image').style.opacity = "1";
+		}
+
+		function mnist_stop() {
+		  document.getElementById('mnist_image').style.opacity = "0";
+		}
+		mnist_stop()
+	      </script>
+	    </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+		 <b> Handwritten Digit Recognizng </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u><b>2020</b></u>
+		
+			<p>Supervisor: Assoc Prof. Yang Bo, UESTC</p>
+			<li> Built a neural network (NN) using only NumPy for efficient array manipulation.</li>
+			<li> The NN consists of: an input layer (784 neurons), one hidden layer (100 neurons), output layer (10 neurons).</li> 
+			<li> Implemented the tanh and softmax functions as activation functions for the hidden and output layers.</li>
+			<li> Used both forward and backward propagation to train the neural network.</li>
+			<li> Calculated the squared loss between expected and predicted values.</li>
+			<li> Calculated gradient descent to optimize the network parameters.</li>
+			<li> Accuracy reaches 97.5% </li>
+			[<a href="https://github.com/HoiyeungNg/Digit_Recognizer">Code</a>] 
+		</p> 
+		 </td>			
+          </tr>
+	
+	<tr onmouseout="auto_car_stop()" onmouseover="auto_car_start()">
+	<td style="padding:10px;width:25%;vertical-align:middle">
+		<div class="one">
+	<div class="two" id='auto_car_image'>
+		<img src='images/auto_car.gif' width="200"></div>
+	<img src='images/auto_car.gif' width="200">
+		</div>
+		<script type="text/javascript">
+	function auto_car_start() {
+		document.getElementById('auto_car_image').style.opacity = "1";
+	}
+
+	function auto_car_stop() {
+		document.getElementById('auto_car_image').style.opacity = "0";
+	}
+	auto_car_stop()
+		</script>
+	</td>
+		<td style="padding:10px;width:75%;vertical-align:middle">
+	 <b> Automatic Line Patrol Car </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u><b>2021</b></u>
+	
+		<p>Supervisor: Dr Rami Ghannam, U of Glasgow</p>
+		<li> Optimized the canny operator and PID controller.</li>	
+		<li> Investigate and propose a patrolling algorithm and enhanced edge detection.</li> 
+		<li> Denoised the imaged using Gaussian filter, followed by the corrosion and expansion operation.</li> 
+		<li> Designed PCB and assembled STM32, HC-12, L9110S (motor drive), OpenMV4 H7 (camera), etc.</li>
+	</p> 
+		</td>			
+		  </tr>
+
+  	<tr onmouseout="ocbot_stop()" onmouseover="ocbot_start()">
+	    <td style="padding:10px;width:25%;vertical-align:middle">
+	      <div class="one">
+		<div class="two" id='ultradepth_image'>
+		  <img src='images/ocbot_acc.gif' width="200"></div>
+		<img src='images/ocbot_acc.gif' width="200">
+	      </div>
+	      <script type="text/javascript">
+		function ocbot_start() {
+		  document.getElementById('ultradepth_image').style.opacity = "1";
+		}
+
+		function ocbot_stop() {
+		  document.getElementById('ultradepth_image').style.opacity = "0";
+		}
+		ocbot_stop()
+	      </script>
+	    </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+		 <b> Open-domain Dialogue System </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u><b>2022</b></u>
+		
+			<p>Supervisor: Prof. Qing Ke, UESTC & Prof. Joao Ponciano, U of Glasgow</p>
+			<li> Optimized the system in terms of response consistency, coherence, and diversity.</li>
+			<li> Improved context-aware by utilizing Hierarchical Recurrent Encoder-Decoder (HRED) model.</li>
+			<li> Implemented a generative system that applies Seq2Seq model to map user messages and dialogue history into response sequences.</li>
+			<li> Designed a new architecture that applied a word-level LSTM to encode dialogue contexts, and then applied a Self-attention mechanism to update the utterance representations.</li>
+			<li> Trained the model on Cornell Movie-Dialogs Corpus to improve its performance.</li>
+			</td>			
+          </tr>
+	 </ul>
+        </tbody></table>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+               <p><heading>Professional experience</heading> </p>
+		<p> 
+	     <ul class="b">
+			<b> Data Science Intern, Youth.AI Pte Ltd.</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u><b>July 2022 -  Feb 2023</b></u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Singapore</b>
+			<p><i>AI-enabled screening for early signs of mental well-being difficulties in youth</i></p>
+			<li>Collected posture data and questionnaires from 518 students.</li>
+			<li>Used kNN to recognize the numerical answer from questionnaires.</li>
+			<li>Wrote a python script to analyze and visualize the questionnaire answers based on clinical standard.</li>
+			<li>Data exploring on patterns behind walking speed, stride length, head movement, arm swing, and body sway.</li>
+			<li>Denoised and resampled posture data. Used Fast Fourier Transforms (FFT) to extract frequency domain features.</li>
+			<li>Applied epsilon-support vector regression to recognize anxiety and depression levels, and applied random forest classifier to detect specific depressive symptoms, with predictive accuracy of 70%.</li>
+	     </ul>
+            </td>
+        </tbody></table>
+	
+	<p> <p>
+
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+               <p><heading>Teaching Experience</heading> </p>
+		<p> 
+	     <ul class="b">
+              <p> <b> Teaching Assistant</b> </p>
+	     <li> IS5451: AIoT Solutions and Development, 2023 Summer, NUS </li> </li>
+	     <li> UESTC2004: Embedded Processor, 2021 Spring, U of Glasgow </li>
+		</p>
+	     </ul>
+        </tbody></table>	
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
